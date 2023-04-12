@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main .logo {
+  padding: 40px 0;
+}
+
+main .logo img {
+  width: 75px;
+}
+
+main .title {
+  font-size: 42px;
+  font-weight: 100;
+  padding-bottom: 18px;
+}
+
+main .title span:last-child {
+  font-weight: 600;
+}
+
+main p {
+  padding-bottom: 40px;
+}
+
+main .input-area {
+  width: 80%;
+  margin-bottom: 90px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.input-area div:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+.input-area div:first-child input {
+  width: 70%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-right: 15px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.input-area div:first-child input::placeholder {
+  color: #ccc;
+}
+
+.input-area div:first-child button {
+  width: 30%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  box-shadow: 3px 3px 10px hsl(223, 100%, 88%);
+}
+
+.input-area div:first-child button:hover {
+  background-color: hsl(223, 100%, 76%);
+  cursor: pointer;
+}
+
+.input-area .errorMsg {
+  font-size: 12px;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 5px;
+  display: none;
+}
+
+.mainImg {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.sns-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sns-icons li {
+  list-style: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  line-height: 1.8;
+  font-size: 12px;
+  text-align: center;
+  color:hsl(223, 87%, 63%)
+}
+
+.sns-icons li:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.sns-icons li:not(:last-child) {
+  margin-right: 10px
+}
+
+.copyright {
+  font-size: 10px;
+  color: #ccc;
+}
