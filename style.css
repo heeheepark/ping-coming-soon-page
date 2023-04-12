@@ -44,36 +44,38 @@ main .title span:last-child {
 
 main p {
   padding-bottom: 40px;
+  font-weight: 100;
 }
 
 main .input-area {
   width: 80%;
   margin-bottom: 90px;
   display: flex;
-  flex-flow: column;
-  text-align: center;
+  justify-content: center  ;
 }
 
-.input-area div:first-child {
+.input-area div {
+  width: 60%;
   display: flex;
+  flex-flow: column;
   justify-content: center;
+  margin-right: 15px;
 }
 
-.input-area div:first-child input {
-  width: 70%;
+.input-area div input {
+  width: 100%;
   height: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid hsl(223, 100%, 88%);
   border-radius: 30px;
-  margin-right: 15px;
   text-align: left;
   padding-left: 20px;
 }
 
-.input-area div:first-child input::placeholder {
+.input-area div input::placeholder {
   color: #ccc;
 }
 
-.input-area div:first-child button {
+.input-area button {
   width: 30%;
   height: 50px;
   border: none;
@@ -83,12 +85,12 @@ main .input-area {
   box-shadow: 3px 3px 10px hsl(223, 100%, 88%);
 }
 
-.input-area div:first-child button:hover {
+.input-area button:hover {
   background-color: hsl(223, 100%, 76%);
   cursor: pointer;
 }
 
-.input-area .errorMsg {
+.input-area div .errorMsg {
   font-size: 12px;
   font-style: italic;
   color: hsl(354, 100%, 66%);
@@ -136,4 +138,279 @@ main .input-area {
 .copyright {
   font-size: 10px;
   color: #ccc;
+}
+
+.attribution {
+  margin-top: 50px; padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  main .logo {
+    padding: 40px 0;
+  }
+  
+  main .logo img {
+    width: 75px;
+  }
+  
+  main .title {
+    font-size: 33px;
+    font-weight: 100;
+    padding-bottom: 18px;
+  }
+  
+  main .title span:last-child {
+    font-weight: 600;
+  }
+  
+  main p {
+    padding-bottom: 40px;
+    font-weight: 100;
+  }
+  
+  main .input-area {
+    width: 80%;
+    margin-bottom: 90px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center  ;
+  }
+  
+  .input-area div {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .input-area div input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  
+  .input-area div input::placeholder {
+    color: #ccc;
+  }
+  
+  .input-area button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    box-shadow: 3px 3px 10px hsl(223, 100%, 88%);
+  }
+  
+  .input-area button:hover {
+    background-color: hsl(223, 100%, 76%);
+    cursor: pointer;
+  }
+  
+  .input-area div .errorMsg {
+    font-size: 12px;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .mainImg {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+  
+  .sns-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .sns-icons li {
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: center;
+    color:hsl(223, 87%, 63%)
+  }
+  
+  .sns-icons li:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .sns-icons li:not(:last-child) {
+    margin-right: 15px
+  }
+  
+  .copyright {
+    font-size: 12px;
+    color: #ccc;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  main .logo {
+    padding: 40px 0;
+  }
+  
+  main .logo img {
+    width: 75px;
+  }
+  
+  main .title {
+    font-size: 27px;
+    font-weight: 100;
+    padding-bottom: 18px;
+  }
+  
+  main .title span:last-child {
+    font-weight: 600;
+  }
+  
+  main p {
+    padding-bottom: 40px;
+    font-weight: 100;
+  }
+  
+  main .input-area {
+    width: 80%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center  ;
+  }
+  
+  .input-area div {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .input-area div input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  
+  .input-area div input::placeholder {
+    color: #ccc;
+  }
+  
+  .input-area button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    box-shadow: 3px 3px 10px hsl(223, 100%, 88%);
+  }
+  
+  .input-area button:hover {
+    background-color: hsl(223, 100%, 76%);
+    cursor: pointer;
+  }
+  
+  .input-area div .errorMsg {
+    font-size: 12px;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .mainImg {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  
+  .sns-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .sns-icons li {
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: center;
+    color:hsl(223, 87%, 63%)
+  }
+  
+  .sns-icons li:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .sns-icons li:not(:last-child) {
+    margin-right: 15px
+  }
+  
+  .copyright {
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .attribution {
+    margin-top: 0px; 
+    padding-bottom: 20px;
+  }
 }
